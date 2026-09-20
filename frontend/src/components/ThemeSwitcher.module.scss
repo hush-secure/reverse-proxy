@@ -1,0 +1,106 @@
+.wrapper {
+  position: relative;
+  font-family: var(--font-family-base);
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--interactive-secondary-bg);
+  color: var(--text-primary);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-size: var(--font-size-sm);
+
+  &:hover {
+    background: var(--interactive-secondary-hover);
+    border-color: var(--border-accent);
+  }
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 0 2px var(--surface-base);
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.menu {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + var(--space-xs));
+  z-index: var(--z-dropdown);
+  min-width: 210px;
+  background: var(--surface-elevated);
+  border: var(--border-width-thin) solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--elevation-base-lg);
+  padding: var(--space-2xs);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: pop var(--transition-fast);
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: start;
+  font-size: var(--font-size-sm);
+  transition: var(--transition-fast);
+
+  &:hover {
+    background: var(--interactive-ghost-hover);
+    color: var(--text-primary);
+  }
+
+  &[aria-selected='true'] {
+    color: var(--text-accent);
+  }
+}
+
+.optionPreview {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  border: var(--border-width-medium) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.optionDot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+.optionLabel {
+  flex: 1;
+}
+
+.optionCheck {
+  color: var(--text-accent);
+  flex-shrink: 0;
+}

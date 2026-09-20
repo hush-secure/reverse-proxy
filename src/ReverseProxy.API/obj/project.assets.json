@@ -1,0 +1,146 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "ReverseProxy.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ReverseProxy.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReverseProxy.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReverseProxy.Application.dll": {}
+        }
+      },
+      "ReverseProxy.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ReverseProxy.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReverseProxy.Domain.dll": {}
+        }
+      },
+      "ReverseProxy.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ReverseProxy.Application": "1.0.0",
+          "ReverseProxy.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ReverseProxy.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReverseProxy.Infrastructure.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "ReverseProxy.Application/1.0.0": {
+      "type": "project",
+      "path": "../ReverseProxy.Application/ReverseProxy.Application.csproj",
+      "msbuildProject": "../ReverseProxy.Application/ReverseProxy.Application.csproj"
+    },
+    "ReverseProxy.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ReverseProxy.Domain/ReverseProxy.Domain.csproj",
+      "msbuildProject": "../ReverseProxy.Domain/ReverseProxy.Domain.csproj"
+    },
+    "ReverseProxy.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ReverseProxy.Infrastructure/ReverseProxy.Infrastructure.csproj",
+      "msbuildProject": "../ReverseProxy.Infrastructure/ReverseProxy.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "ReverseProxy.Application >= 1.0.0",
+      "ReverseProxy.Domain >= 1.0.0",
+      "ReverseProxy.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/tiger/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.API/ReverseProxy.API.csproj",
+      "projectName": "ReverseProxy.API",
+      "projectPath": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.API/ReverseProxy.API.csproj",
+      "packagesPath": "/home/tiger/.nuget/packages/",
+      "outputPath": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.API/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/tiger/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/ReverseProxy.Application.csproj": {
+              "projectPath": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/ReverseProxy.Application.csproj"
+            },
+            "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/ReverseProxy.Domain.csproj": {
+              "projectPath": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/ReverseProxy.Domain.csproj"
+            },
+            "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/ReverseProxy.Infrastructure.csproj": {
+              "projectPath": "/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/ReverseProxy.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.317/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

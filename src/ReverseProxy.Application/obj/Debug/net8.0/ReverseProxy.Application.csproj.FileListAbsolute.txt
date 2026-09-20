@@ -1,0 +1,15 @@
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/bin/Debug/net8.0/ReverseProxy.Application.deps.json
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/bin/Debug/net8.0/ReverseProxy.Application.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/bin/Debug/net8.0/ReverseProxy.Application.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/bin/Debug/net8.0/ReverseProxy.Domain.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/bin/Debug/net8.0/ReverseProxy.Domain.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.csproj.AssemblyReference.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.AssemblyInfoInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.AssemblyInfo.cs
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.csproj.CoreCompileInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseP.E3AFED41.Up2Date
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/refint/ReverseProxy.Application.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ReverseProxy.Application.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Application/obj/Debug/net8.0/ref/ReverseProxy.Application.dll

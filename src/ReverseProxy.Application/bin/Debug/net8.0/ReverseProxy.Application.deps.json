@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ReverseProxy.Application/1.0.0": {
+        "dependencies": {
+          "ReverseProxy.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ReverseProxy.Application.dll": {}
+        }
+      },
+      "ReverseProxy.Domain/1.0.0": {
+        "runtime": {
+          "ReverseProxy.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReverseProxy.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ReverseProxy.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

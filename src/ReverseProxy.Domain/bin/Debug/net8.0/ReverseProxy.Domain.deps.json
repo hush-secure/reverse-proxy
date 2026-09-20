@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ReverseProxy.Domain/1.0.0": {
+        "runtime": {
+          "ReverseProxy.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ReverseProxy.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

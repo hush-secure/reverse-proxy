@@ -1,0 +1,17 @@
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.csproj.AssemblyReference.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.AssemblyInfoInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.AssemblyInfo.cs
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.csproj.CoreCompileInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Infrastructure.deps.json
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Infrastructure.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Infrastructure.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Application.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Domain.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Domain.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/bin/Debug/net8.0/ReverseProxy.Application.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseP.BB96F42A.Up2Date
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/refint/ReverseProxy.Infrastructure.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ReverseProxy.Infrastructure.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Infrastructure/obj/Debug/net8.0/ref/ReverseProxy.Infrastructure.dll

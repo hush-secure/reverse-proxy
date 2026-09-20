@@ -1,0 +1,544 @@
+:root[data-theme="WhatsappDark"],
+.WhatsappDark-theme {
+  /* ============================================
+     BACKGROUNDS - WhatsApp Dark base surfaces
+     ============================================ */
+  --surface-base: #0B141A;           /* WhatsApp main dark background */
+  --surface-raised: #111B21;         /* Sidebar / panels */
+  --surface-elevated: #202C33;       /* Message bubbles / cards */
+  --surface-overlay: #2A3942;        /* Hover states / elevated panels */
+  --surface-modal: rgba(17, 27, 33, 0.97);
+
+  /* ============================================
+     BRAND SPECTRUM - WhatsApp green scale
+     ============================================ */
+  --brand-50: #E8F5F1;
+  --brand-100: #C3E8DC;
+  --brand-200: #85CEB5;
+  --brand-300: #34B089;
+  --brand-400: #00A884;              /* WhatsApp primary green */
+  --brand-500: #008F6F;
+  --brand-600: #007A5E;
+  --brand-700: #006450;
+  --brand-800: #004D3C;
+  --brand-900: #00382B;
+
+  /* ============================================
+     PRIMARY ACTIONS - WhatsApp green palette
+     ============================================ */
+  --primary: #00A884;                /* WhatsApp green */
+  --primary-intense: #25D366;        /* Bright WhatsApp green */
+  --primary-subtle: #008F6F;
+  --primary-muted: #006450;
+
+  /* ============================================
+     TEXT HIERARCHY - WhatsApp dark text system
+     ============================================ */
+  --text-primary: #E9EDF0;           /* Primary white text */
+  --text-secondary: #AEBAC1;         /* Secondary gray text */
+  --text-tertiary: #8696A0;          /* Muted gray */
+  --text-muted: #667781;             /* Timestamps / hints */
+  --text-accent: #00A884;            /* Green accent */
+  --text-accent-subtle: #008F6F;
+
+  /* ============================================
+     BORDERS & DIVIDERS - Dark separation
+     ============================================ */
+  --border-subtle: #1E2D35;
+  --border-default: #222D34;         /* WhatsApp divider */
+  --border-strong: #2A3942;
+  --border-accent: #00A884;
+  --border-accent-intense: #25D366;
+
+  /* ============================================
+     INTERACTIVE ELEMENTS - WhatsApp interactions
+     ============================================ */
+  --interactive-primary-bg: linear-gradient(135deg, #00A884 0%, #25D366 100%);
+  --interactive-primary-hover: linear-gradient(135deg, #25D366 0%, #2EE176 100%);
+  --interactive-primary-active: linear-gradient(135deg, #008F6F 0%, #00A884 100%);
+  --interactive-primary-text: #FFFFFF;
+
+  --interactive-secondary-bg: #202C33;
+  --interactive-secondary-hover: #2A3942;
+  --interactive-secondary-active: #374045;
+  --interactive-secondary-text: #E9EDF0;
+
+  --interactive-ghost-hover: rgba(0, 168, 132, 0.12);
+  --interactive-ghost-active: rgba(0, 168, 132, 0.24);
+
+  /* ============================================
+     INPUT FIELDS - WhatsApp search & chat input
+     ============================================ */
+  --input-bg: #202C33;
+  --input-bg-focus: #2A3942;
+  --input-border: #374045;
+  --input-border-hover: #4A5568;
+  --input-border-focus: #00A884;
+  --input-text: #E9EDF0;
+  --input-placeholder: #8696A0;
+
+  /* ============================================
+     FEEDBACK STATES - WhatsApp notifications
+     ============================================ */
+  --state-success: #25D366;
+  --state-success-bg: rgba(37, 211, 102, 0.12);
+  --state-warning: #FFA726;
+  --state-warning-bg: rgba(255, 167, 38, 0.12);
+  --state-error: #F44336;
+  --state-error-bg: rgba(244, 67, 54, 0.12);
+  --state-info: #53BDEB;             /* WhatsApp blue ticks color */
+  --state-info-bg: rgba(83, 189, 235, 0.12);
+
+  /* ============================================
+     ELEVATION SYSTEM - Dark shadows
+     ============================================ */
+  --elevation-accent-sm: 0 2px 12px rgba(0, 168, 132, 0.2),
+                         0 1px 4px rgba(0, 100, 80, 0.12);
+  --elevation-accent-md: 0 4px 20px rgba(0, 168, 132, 0.25),
+                         0 2px 8px rgba(0, 100, 80, 0.15);
+  --elevation-accent-lg: 0 8px 36px rgba(0, 168, 132, 0.3),
+                         0 4px 16px rgba(0, 100, 80, 0.18);
+  --elevation-accent-xl: 0 16px 56px rgba(0, 168, 132, 0.35),
+                         0 8px 24px rgba(0, 100, 80, 0.2);
+
+  --elevation-base-sm: 0 1px 4px rgba(0, 0, 0, 0.3),
+                       0 2px 8px rgba(0, 0, 0, 0.2);
+  --elevation-base-md: 0 2px 12px rgba(0, 0, 0, 0.35),
+                       0 4px 16px rgba(0, 0, 0, 0.25);
+  --elevation-base-lg: 0 4px 20px rgba(0, 0, 0, 0.4),
+                       0 8px 32px rgba(0, 0, 0, 0.3);
+  --elevation-base-xl: 0 8px 36px rgba(0, 0, 0, 0.45),
+                       0 16px 48px rgba(0, 0, 0, 0.35);
+
+  --elevation-combined:
+    0 4px 20px rgba(0, 0, 0, 0.35),
+    0 0 32px rgba(0, 168, 132, 0.1),
+    0 2px 8px rgba(0, 100, 80, 0.08);
+
+  /* ============================================
+     GRADIENT SYSTEM - WhatsApp teal gradients
+     ============================================ */
+  --gradient-primary: linear-gradient(135deg,
+    #00A884 0%,
+    #25D366 50%,
+    #2EE176 100%
+  );
+  --gradient-primary-muted: linear-gradient(135deg,
+    #006450 0%,
+    #00A884 100%
+  );
+  --gradient-primary-subtle: linear-gradient(135deg,
+    rgba(0, 168, 132, 0.08) 0%,
+    rgba(37, 211, 102, 0.04) 100%
+  );
+
+  --gradient-surface-depth: linear-gradient(180deg,
+    #111B21 0%,
+    #0B141A 100%
+  );
+  --gradient-surface-warm: linear-gradient(135deg,
+    #0B141A 0%,
+    #111B21 50%,
+    #182229 100%
+  );
+
+  --gradient-spotlight: radial-gradient(
+    circle at 50% 0%,
+    rgba(0, 168, 132, 0.1) 0%,
+    rgba(37, 211, 102, 0.04) 40%,
+    transparent 70%
+  );
+  --gradient-glow: radial-gradient(
+    circle at center,
+    rgba(37, 211, 102, 0.15) 0%,
+    rgba(0, 168, 132, 0.06) 40%,
+    transparent 70%
+  );
+
+  /* ============================================
+     ACCENT EFFECTS - WhatsApp green glow
+     ============================================ */
+  --accent-glow: rgba(0, 168, 132, 0.35);
+  --accent-shimmer: rgba(37, 211, 102, 0.4);
+  --accent-divider: linear-gradient(90deg,
+    transparent 0%,
+    rgba(0, 168, 132, 0.3) 20%,
+    #00A884 50%,
+    rgba(0, 168, 132, 0.3) 80%,
+    transparent 100%
+  );
+
+  /* ============================================
+     OVERLAY SYSTEM - Dark veils
+     ============================================ */
+  --overlay-subtle: rgba(11, 20, 26, 0.7);
+  --overlay-medium: rgba(11, 20, 26, 0.85);
+  --overlay-strong: rgba(11, 20, 26, 0.94);
+
+  --overlay-glass-subtle: rgba(17, 27, 33, 0.8);
+  --overlay-glass-medium: rgba(17, 27, 33, 0.9);
+  --overlay-glass-strong: rgba(17, 27, 33, 0.97);
+
+  /* ============================================
+     SPECIAL EFFECTS - WhatsApp shimmer
+     ============================================ */
+  --effect-shimmer: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(37, 211, 102, 0.3) 30%,
+    rgba(0, 168, 132, 0.5) 50%,
+    rgba(37, 211, 102, 0.3) 70%,
+    transparent 100%
+  );
+
+  --effect-metallic: linear-gradient(
+    135deg,
+    #006450 0%,
+    #008F6F 15%,
+    #00A884 30%,
+    #25D366 50%,
+    #00A884 70%,
+    #008F6F 85%,
+    #006450 100%
+  );
+
+  --gradient-accent-enhanced: linear-gradient(
+    135deg,
+    #007A5E 0%,
+    #00C99E 25%,
+    #00A884 50%,
+    #00C99E 75%,
+    #007A5E 100%
+  );
+
+  --gradient-text-accent: linear-gradient(
+    to right,
+    #006450 0%,
+    #00A884 25%,
+    #25D366 50%,
+    #00A884 75%,
+    #006450 100%
+  );
+
+  /* ============================================
+     PASSWORD STRENGTH - WhatsApp style feedback
+     ============================================ */
+  --state-strength-weak: #F44336;
+  --state-strength-fair: #FFA726;
+  --state-strength-moderate: #FFC107;
+  --state-strength-strong: #00A884;
+  --state-strength-excellent: #25D366;
+
+  /* ============================================
+     TEXTURE EFFECTS - Subtle dark patterns
+     ============================================ */
+  --texture-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+
+  --texture-linen: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpattern id='linen' width='10' height='10' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 0h10v10H0z' fill='%230B141A'/%3E%3Ccircle cx='5' cy='5' r='0.5' fill='%23222D34' opacity='0.3'/%3E%3C/pattern%3E%3Crect width='100' height='100' fill='url(%23linen)'/%3E%3C/svg%3E");
+
+  /* ============================================
+     BRAND ASSETS - Logo & imagery
+     ============================================ */
+  --logo-main: url(../../../public/images/icons/night_theme/icon-512-transparint.png);
+
+  /* ============================================
+     TEXT SHADOWS - Dark mode depth
+     ============================================ */
+  --text-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4),
+                    0 0 8px rgba(0, 168, 132, 0.08);
+  --text-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.5),
+                    0 0 16px rgba(0, 168, 132, 0.1);
+  --text-shadow-gold: 0 0 12px rgba(37, 211, 102, 0.4),
+                      0 0 24px rgba(0, 168, 132, 0.2),
+                      0 2px 4px rgba(0, 80, 60, 0.3);
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM
+     ============================================ */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-display: 'Helvetica Neue', Arial, sans-serif;
+  --font-family-accent: 'Helvetica Neue', Arial, sans-serif;
+
+  --font-size-2xs: 0.7179rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0.5px;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-wider: 1.5px;
+  --letter-spacing-widest: 3px;
+
+  /* ============================================
+     SPACING SCALE
+     ============================================ */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.375rem;
+  --space-sm: 0.625rem;
+  --space-md: 0.9375rem;
+  --space-lg: 1.4375rem;
+  --space-xl: 1.5625rem;
+  --space-2xl: 3rem;
+  --space-base: 1rem;
+  --space-3xs: 0.5rem;
+
+  /* ============================================
+     BORDER RADIUS SCALE
+     ============================================ */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 50%;
+  --radius-pill: 50px;
+  --radius-md-alt: 8px;
+  --radius-captcha: 7px;
+
+  /* ============================================
+     BORDER WIDTH
+     ============================================ */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  --border-width-accent: 3px;
+
+  /* ============================================
+     COMPONENT DIMENSIONS - All inherited
+     ============================================ */
+  --container-width-sm: 411px;
+  --container-height-sm: 269px;
+  --form-max-width: 480px;
+  --header-height: 48px;
+  --logo-size: 45px;
+  --divider-height-sm: 20px;
+  --menu-icon-width: 28px;
+  --menu-icon-width-sm: 18px;
+  --dot-size: 20px;
+  --dot-size-active: 50px;
+  --icon-size-sm: 24px;
+
+  /* ============================================
+     INPUT SYSTEM
+     ============================================ */
+  --input-padding-x: 16px;
+  --input-padding-y: 12px;
+  --input-padding-y-alt: 14px;
+  --input-padding-with-icon: 36px;
+  --input-padding-right-with-icon: 45px;
+  --input-icon-offset: 54px;
+  --input-icon-top: 50%;
+  --input-icon-left: 5px;
+  --input-action-btn-offset: 12px;
+  --focus-ring-width: 2px;
+
+  /* ============================================
+     BUTTON SYSTEM
+     ============================================ */
+  --button-padding-x: 16px;
+  --button-padding-y: 16px;
+  --button-padding-sm-y: 12px;
+  --button-padding-lg-x: 35px;
+  --button-back-width: 60px;
+  --button-back-padding-x: 14px;
+  --button-group-gap: 9px;
+
+  /* ============================================
+     ANIMATION & TRANSITIONS
+     ============================================ */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+  --transition-slower: 0.6s ease;
+  --transition-sidebar: 0.5s;
+  --transition-overlay: 0.5s ease;
+  --transition-captcha-expand: 0.5s ease-in-out;
+  --transition-captcha-fade: 0.4s ease-in-out 0.1s;
+
+  --blur-sm: 8px;
+  --blur-md: 15px;
+  --blur-lg: 24px;
+  --blur-overlay-sm: 5px;
+
+  /* ============================================
+     EFFECTS & OFFSETS
+     ============================================ */
+  --hover-lift-sm: -2px;
+  --hover-lift-md: -4px;
+  --step-slide-offset: -20px;
+  --sticky-bar-hidden-offset: -74px;
+  --notification-hidden-offset: -70px;
+
+  --glow-radius-sm: 5px;
+  --glow-radius-md: 10px;
+  --glow-radius-lg: 15px;
+  --glow-radius-xl: 25px;
+
+  /* ============================================
+     Z-INDEX SYSTEM
+     ============================================ */
+  --z-base: 1;
+  --z-input-icon: 9;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-header: 1000;
+  --z-shadow: 1500;
+  --z-sidebar-overlay: 1999;
+  --z-sidebar: 2000;
+  --z-modal: 5000;
+  --z-notification: 9999;
+  --z-page-expired: 99999;
+
+  /* ============================================
+     STROKE & SCALE
+     ============================================ */
+  --stroke-width-sm: 1px;
+  --stroke-width-md: 1.5;
+  --stroke-width-lg: 2px;
+
+  --scale-hover-sm: 1.1;
+  --scale-hover-md: 1.15;
+  --scale-hover-lg: 1.2;
+  --scale-initial: 0.9;
+  --scale-modal-initial: 0.95;
+
+  /* ============================================
+     OPACITY SYSTEM
+     ============================================ */
+  --opacity-muted: 0.6;
+  --opacity-medium: 0.8;
+  --opacity-high: 0.9;
+  --opacity-full: 1;
+  --opacity-invisible: 0;
+
+  /* ============================================
+     CAPTCHA SPECIFIC
+     ============================================ */
+  --captcha-max-height: 72px;
+  --captcha-width: 298px;
+  --captcha-margin-top-collapsed: 1.5rem;
+  --captcha-margin-bottom: 12px;
+  --captcha-widget-offset-x: -2px;
+  --captcha-widget-offset-y: -2px;
+
+  /* ============================================
+     PROGRESS BAR & PASSWORD STRENGTH
+     ============================================ */
+  --progress-bar-height: 3px;
+  --password-strength-gap: 6px;
+  --password-strength-bar-height: 3px;
+
+  /* ============================================
+     ANIMATION DURATIONS
+     ============================================ */
+  --animation-shimmer-duration: 1.5s;
+  --animation-progress-duration: 1.5s;
+  --animation-fade-duration: 0.3s;
+  --animation-fade-in-duration: 0.4s;
+  --animation-fade-delay: 0.2s;
+  --animation-fade-in-distance: 20px;
+  --animation-notification-enter: 0.6s;
+  --animation-notification-exit: 0.4s;
+  --animation-modal-enter: 0.5s;
+  --animation-hourglass-duration: 4s;
+
+  --gradient-animated-size: 200% auto;
+
+  /* ============================================
+     SIDEBAR SYSTEM
+     ============================================ */
+  --sidebar-width: 300px;
+  --sidebar-padding-x: 30px;
+  --sidebar-padding-y: 40px;
+  --sidebar-closed-offset: -100%;
+  --sidebar-logo-size: 80px;
+  --sidebar-logo-margin-bottom: -2px;
+  --sidebar-link-height: 50px;
+  --sidebar-item-gap: 11px;
+
+  --font-size-sidebar-link: 0.8125rem;
+  --font-size-sidebar-logo: 1.4rem;
+  --letter-spacing-extra-wide: 3px;
+
+  /* ============================================
+     UNDERLINE & ROTATION SYSTEM
+     ============================================ */
+  --underline-offset-sm: 4px;
+  --underline-offset-md: 6px;
+  --underline-offset-lg: 8px;
+
+  --rotation-subtle: 5deg;
+  --rotation-quarter: 90deg;
+  --rotation-half: 180deg;
+  --rotation-full: 360deg;
+
+  /* ============================================
+     SCROLLBAR SYSTEM
+     ============================================ */
+  --scrollbar-width-thin: 4px;
+  --scrollbar-width-medium: 8px;
+  --scrollbar-hidden-width: 0px;
+
+  /* ============================================
+     DROPDOWN SYSTEM
+     ============================================ */
+  --dropdown-max-height: 200px;
+  --dropdown-padding: 5px;
+
+  /* ============================================
+     EASING FUNCTIONS
+     ============================================ */
+  --easing-linear: linear;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-emphasized: cubic-bezier(0.77, 0, 0.175, 1);
+  --easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-spring: cubic-bezier(0.23, 1, 0.32, 1);
+
+  /* ============================================
+     NOTIFICATION SYSTEM
+     ============================================ */
+  --notification-offset-x: 30px;
+  --notification-offset-y: 30px;
+  --notification-min-width: 320px;
+  --notification-max-width: 450px;
+  --notification-padding: 18px;
+  --notification-gap: 15px;
+  --notification-slide-distance: 50px;
+
+  /* ============================================
+     MODAL SYSTEM
+     ============================================ */
+  --modal-padding-x: 40px;
+  --modal-padding-y: 50px;
+  --modal-icon-size: 60px;
+  --modal-icon-margin-bottom: 30px;
+  --modal-title-margin-bottom: 15px;
+  --modal-text-margin-bottom: 25px;
+  --modal-code-margin-bottom: 35px;
+
+  --font-size-modal-title: 1.8rem;
+  --font-size-modal-body: 0.95rem;
+  --font-size-modal-code: 0.8rem;
+  --font-size-button: 0.9rem;
+
+  --font-family-secondary: 'Helvetica Neue', Arial, sans-serif;
+  --font-family-monospace: 'Courier New', Courier, monospace;
+
+  --font-size-3xs: 0.625rem;
+  --font-size-4xs: 0.5625rem;
+  --letter-spacing-tight-xs: 0.5px;
+  --letter-spacing-tight-sm: 1px;
+}

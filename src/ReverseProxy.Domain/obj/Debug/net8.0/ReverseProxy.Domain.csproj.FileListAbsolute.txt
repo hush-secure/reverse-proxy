@@ -1,0 +1,11 @@
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/bin/Debug/net8.0/ReverseProxy.Domain.deps.json
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/bin/Debug/net8.0/ReverseProxy.Domain.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/bin/Debug/net8.0/ReverseProxy.Domain.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.AssemblyInfoInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.AssemblyInfo.cs
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.csproj.CoreCompileInputs.cache
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/refint/ReverseProxy.Domain.dll
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ReverseProxy.Domain.pdb
+/home/tiger/Documents/new_folder_5/programing/web_dev/mix/ReverseProxy/src/ReverseProxy.Domain/obj/Debug/net8.0/ref/ReverseProxy.Domain.dll

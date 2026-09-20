@@ -1,0 +1,561 @@
+:root[data-theme="Ember"],
+.Ember-theme {
+  /* ============================================
+     BACKGROUNDS - Warm charcoal hearth surfaces
+     ============================================ */
+  --surface-base: #100E0C;           /* Warm near-black, brown undertone */
+  --surface-raised: #171310;         /* Hearth panel */
+  --surface-elevated: #1E1913;       /* Cards & elevated surfaces */
+  --surface-overlay: #28211A;        /* Hover / overlay states */
+  --surface-modal: rgba(16, 14, 12, 0.97);
+
+  /* ============================================
+     BRAND SPECTRUM - Burnt ember orange scale
+     ============================================ */
+  --brand-50: #FFF3EA;
+  --brand-100: #FFE3D1;
+  --brand-200: #FFC5A3;
+  --brand-300: #FFA06B;
+  --brand-400: #FF7A3D;              /* Bright ember */
+  --brand-500: #F2622E;              /* Core burnt orange */
+  --brand-600: #D9481F;
+  --brand-700: #B33A17;
+  --brand-800: #8A2C12;
+  --brand-900: #5C1D0C;
+
+  /* ============================================
+     PRIMARY ACTIONS - Ember & flame palette
+     ============================================ */
+  --primary: #F2622E;                /* Burnt ember orange */
+  --primary-intense: #FF7A3D;        /* Bright flame */
+  --primary-subtle: #D9481F;         /* Deep ember */
+  --primary-muted: #B33A17;          /* Charred ember */
+
+  /* ============================================
+     TEXT HIERARCHY - Warm parchment contrast
+     ============================================ */
+  --text-primary: #F5EFE6;           /* Warm ivory white */
+  --text-secondary: #CFC5B4;         /* Soft parchment */
+  --text-tertiary: #9C9080;          /* Warm ash gray */
+  --text-muted: #6B6052;             /* Cold ash */
+  --text-accent: #FF8C4A;            /* Flame accent */
+  --text-accent-subtle: #D9481F;
+
+  /* ============================================
+     BORDERS & DIVIDERS - Scorched lines
+     ============================================ */
+  --border-subtle: #241E18;
+  --border-default: #33291F;
+  --border-strong: #453729;
+  --border-accent: #F2622E;
+  --border-accent-intense: #FF7A3D;
+
+  /* ============================================
+     INTERACTIVE ELEMENTS - Fire interactions
+     ============================================ */
+  --interactive-primary-bg: linear-gradient(135deg, #D9481F 0%, #F2622E 50%, #FF7A3D 100%);
+  --interactive-primary-hover: linear-gradient(135deg, #F2622E 0%, #FF9558 100%);
+  --interactive-primary-active: linear-gradient(135deg, #B33A17 0%, #D9481F 100%);
+  --interactive-primary-text: #FFF6EE;
+
+  --interactive-secondary-bg: rgba(242, 98, 46, 0.1);
+  --interactive-secondary-hover: rgba(242, 98, 46, 0.18);
+  --interactive-secondary-active: rgba(242, 98, 46, 0.28);
+  --interactive-secondary-text: #FF8C4A;
+
+  --interactive-ghost-hover: rgba(242, 98, 46, 0.07);
+  --interactive-ghost-active: rgba(242, 98, 46, 0.14);
+
+  /* ============================================
+     INPUT FIELDS - Smoked form controls
+     ============================================ */
+  --input-bg: #171310;
+  --input-bg-focus: #1E1913;
+  --input-border: #3A2F24;
+  --input-border-hover: #5C4A38;
+  --input-border-focus: #F2622E;
+  --input-text: #F5EFE6;
+  --input-placeholder: #6B6052;
+
+  /* ============================================
+     FEEDBACK STATES - Warm notifications
+     ============================================ */
+  --state-success: #8FBF6B;          /* Sage green — earthy, not neon */
+  --state-success-bg: rgba(143, 191, 107, 0.1);
+  --state-warning: #E9A23B;          /* Honey amber */
+  --state-warning-bg: rgba(233, 162, 59, 0.1);
+  --state-error: #E5484D;            /* Brick red */
+  --state-error-bg: rgba(229, 72, 77, 0.1);
+  --state-info: #D97D3E;             /* Warm copper (no blue) */
+  --state-info-bg: rgba(217, 125, 62, 0.1);
+
+  /* ============================================
+     ELEVATION SYSTEM - Warm firelight shadows
+     ============================================ */
+  --elevation-accent-sm: 0 2px 10px rgba(242, 98, 46, 0.18),
+                         0 0 4px rgba(242, 98, 46, 0.08);
+  --elevation-accent-md: 0 4px 20px rgba(242, 98, 46, 0.22),
+                         0 0 12px rgba(242, 98, 46, 0.1);
+  --elevation-accent-lg: 0 8px 32px rgba(242, 98, 46, 0.28),
+                         0 0 24px rgba(242, 98, 46, 0.12);
+  --elevation-accent-xl: 0 16px 48px rgba(242, 98, 46, 0.32),
+                         0 0 40px rgba(242, 98, 46, 0.15);
+
+  --elevation-base-sm: 0 1px 4px rgba(0, 0, 0, 0.5),
+                       0 2px 8px rgba(0, 0, 0, 0.35);
+  --elevation-base-md: 0 2px 12px rgba(0, 0, 0, 0.55),
+                       0 4px 16px rgba(0, 0, 0, 0.4);
+  --elevation-base-lg: 0 4px 24px rgba(0, 0, 0, 0.6),
+                       0 8px 32px rgba(0, 0, 0, 0.45);
+  --elevation-base-xl: 0 8px 36px rgba(0, 0, 0, 0.65),
+                       0 16px 48px rgba(0, 0, 0, 0.5);
+
+  --elevation-combined:
+    0 4px 20px rgba(0, 0, 0, 0.55),
+    0 0 30px rgba(242, 98, 46, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+
+  /* ============================================
+     GRADIENT SYSTEM - Fire flows
+     ============================================ */
+  --gradient-primary: linear-gradient(135deg,
+    #B33A17 0%,
+    #D9481F 30%,
+    #F2622E 60%,
+    #FF8C4A 100%
+  );
+  --gradient-primary-muted: linear-gradient(135deg,
+    #5C1D0C 0%,
+    #D9481F 100%
+  );
+  --gradient-primary-subtle: linear-gradient(135deg,
+    rgba(242, 98, 46, 0.06) 0%,
+    rgba(255, 140, 74, 0.02) 100%
+  );
+
+  --gradient-surface-depth: linear-gradient(180deg,
+    #171310 0%,
+    #100E0C 100%
+  );
+  --gradient-surface-ember: linear-gradient(135deg,
+    #100E0C 0%,
+    #171310 40%,
+    #1E1913 60%,
+    #100E0C 100%
+  );
+
+  --gradient-spotlight: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 122, 61, 0.08) 0%,
+    rgba(242, 98, 46, 0.03) 40%,
+    transparent 70%
+  );
+  --gradient-glow: radial-gradient(
+    circle at center,
+    rgba(255, 140, 74, 0.14) 0%,
+    rgba(242, 98, 46, 0.06) 40%,
+    transparent 70%
+  );
+
+  /* ============================================
+     ACCENT EFFECTS - Firelight glow
+     ============================================ */
+  --accent-glow: rgba(242, 98, 46, 0.4);
+  --accent-shimmer: rgba(255, 150, 90, 0.5);
+  --accent-divider: linear-gradient(90deg,
+    transparent 0%,
+    rgba(242, 98, 46, 0.2) 15%,
+    #F2622E 50%,
+    rgba(242, 98, 46, 0.2) 85%,
+    transparent 100%
+  );
+
+  /* ============================================
+     OVERLAY SYSTEM - Smoked glass
+     ============================================ */
+  --overlay-subtle: rgba(16, 14, 12, 0.7);
+  --overlay-medium: rgba(16, 14, 12, 0.85);
+  --overlay-strong: rgba(16, 14, 12, 0.94);
+
+  --overlay-glass-subtle: rgba(23, 19, 16, 0.78);
+  --overlay-glass-medium: rgba(23, 19, 16, 0.9);
+  --overlay-glass-strong: rgba(23, 19, 16, 0.97);
+
+  /* ============================================
+     SPECIAL EFFECTS
+     ============================================ */
+  --effect-shimmer: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(242, 98, 46, 0.1) 20%,
+    rgba(255, 150, 90, 0.35) 50%,
+    rgba(242, 98, 46, 0.1) 80%,
+    transparent 100%
+  );
+
+  --effect-neon-border: linear-gradient(
+    90deg,
+    #D9481F,
+    #FF7A3D,
+    #FFC5A3,
+    #FF7A3D,
+    #D9481F
+  );
+
+  --effect-metallic-ember: linear-gradient(
+    135deg,
+    #5C1D0C 0%,
+    #8A2C12 10%,
+    #D9481F 25%,
+    #F2622E 35%,
+    #FF9E5E 50%,
+    #F2622E 65%,
+    #D9481F 75%,
+    #8A2C12 90%,
+    #5C1D0C 100%
+  );
+
+  --gradient-accent-enhanced: linear-gradient(
+    135deg,
+    #D9481F 0%,
+    #FFB27A 25%,
+    #FF7A3D 50%,
+    #FFB27A 75%,
+    #D9481F 100%
+  );
+
+  --gradient-text-accent: linear-gradient(
+    to right,
+    #B33A17 0%,
+    #F2622E 30%,
+    #FFA06B 50%,
+    #F2622E 70%,
+    #B33A17 100%
+  );
+
+  /* ============================================
+     PASSWORD STRENGTH
+     ============================================ */
+  --state-strength-weak: #E5484D;
+  --state-strength-fair: #E9A23B;
+  --state-strength-moderate: #F2C14E;
+  --state-strength-strong: #8FBF6B;
+  --state-strength-excellent: #C7E8B0;
+
+  /* ============================================
+     TEXTURE EFFECTS - Ash & ember specks
+     ============================================ */
+  --texture-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+
+  --texture-grid: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='%2313100E'/%3E%3Cpath d='M0 0h40M0 40h40M0 0v40M40 0v40' stroke='%2333291F' stroke-width='0.4' opacity='0.6'/%3E%3C/svg%3E");
+
+  --texture-dots: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='0.6' fill='%23F2622E' opacity='0.08'/%3E%3C/svg%3E");
+
+  /* ============================================
+     BRAND ASSETS
+     ============================================ */
+  --logo-main: url(../../../public/images/icons/night_theme/icon-512-transparint.png);
+
+  /* ============================================
+     TEXT SHADOWS - Firelight on charcoal
+     ============================================ */
+  --text-shadow-sm: 0 0 8px rgba(242, 98, 46, 0.25),
+                    0 1px 3px rgba(0, 0, 0, 0.7);
+  --text-shadow-md: 0 0 16px rgba(242, 98, 46, 0.4),
+                    0 0 32px rgba(242, 98, 46, 0.12),
+                    0 2px 6px rgba(0, 0, 0, 0.7);
+  --text-shadow-gold: 0 0 12px rgba(255, 140, 74, 0.55),
+                      0 0 28px rgba(242, 98, 46, 0.3),
+                      0 0 48px rgba(179, 58, 23, 0.12),
+                      0 2px 4px rgba(0, 0, 0, 0.7);
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM - Warm editorial serif
+     ============================================ */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-display: 'Fraunces', 'Marcellus', Georgia, serif;
+  --font-family-accent: 'JetBrains Mono', 'Courier New', monospace;
+
+  --font-size-2xs: 0.7179rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0.4px;
+  --letter-spacing-wide: 1px;
+  --letter-spacing-wider: 2px;
+  --letter-spacing-widest: 3.5px;
+
+  /* ============================================
+     SPACING SCALE
+     ============================================ */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.375rem;
+  --space-sm: 0.625rem;
+  --space-md: 0.9375rem;
+  --space-lg: 1.4375rem;
+  --space-xl: 1.5625rem;
+  --space-2xl: 3rem;
+  --space-base: 1rem;
+  --space-3xs: 0.5rem;
+
+  /* ============================================
+     BORDER RADIUS SCALE
+     ============================================ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 18px;
+  --radius-full: 50%;
+  --radius-pill: 50px;
+  --radius-md-alt: 8px;
+  --radius-captcha: 6px;
+
+  /* ============================================
+     BORDER WIDTH
+     ============================================ */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  --border-width-accent: 1px;
+
+  /* ============================================
+     COMPONENT DIMENSIONS
+     ============================================ */
+  --container-width-sm: 411px;
+  --container-height-sm: 269px;
+  --form-max-width: 480px;
+  --header-height: 48px;
+  --logo-size: 45px;
+  --divider-height-sm: 20px;
+  --menu-icon-width: 28px;
+  --menu-icon-width-sm: 18px;
+  --dot-size: 20px;
+  --dot-size-active: 50px;
+  --icon-size-sm: 24px;
+
+  /* ============================================
+     INPUT SYSTEM
+     ============================================ */
+  --input-padding-x: 16px;
+  --input-padding-y: 12px;
+  --input-padding-y-alt: 14px;
+  --input-padding-with-icon: 36px;
+  --input-padding-right-with-icon: 45px;
+  --input-icon-offset: 54px;
+  --input-icon-top: 50%;
+  --input-icon-left: 5px;
+  --input-action-btn-offset: 12px;
+  --focus-ring-width: 2px;
+
+  /* ============================================
+     BUTTON SYSTEM
+     ============================================ */
+  --button-padding-x: 16px;
+  --button-padding-y: 16px;
+  --button-padding-sm-y: 12px;
+  --button-padding-lg-x: 35px;
+  --button-back-width: 60px;
+  --button-back-padding-x: 14px;
+  --button-group-gap: 9px;
+
+  /* ============================================
+     ANIMATION & TRANSITIONS
+     ============================================ */
+  --transition-fast: 0.14s ease;
+  --transition-normal: 0.28s ease;
+  --transition-slow: 0.45s ease;
+  --transition-slower: 0.65s ease;
+  --transition-sidebar: 0.45s;
+  --transition-overlay: 0.45s ease;
+  --transition-captcha-expand: 0.5s ease-in-out;
+  --transition-captcha-fade: 0.4s ease-in-out 0.1s;
+
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 24px;
+  --blur-overlay-sm: 10px;
+
+  /* ============================================
+     EFFECTS & OFFSETS
+     ============================================ */
+  --hover-lift-sm: -2px;
+  --hover-lift-md: -4px;
+  --step-slide-offset: -20px;
+  --sticky-bar-hidden-offset: -74px;
+  --notification-hidden-offset: -70px;
+
+  --glow-radius-sm: 6px;
+  --glow-radius-md: 14px;
+  --glow-radius-lg: 22px;
+  --glow-radius-xl: 36px;
+
+  /* ============================================
+     Z-INDEX SYSTEM
+     ============================================ */
+  --z-base: 1;
+  --z-input-icon: 9;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-header: 1000;
+  --z-shadow: 1500;
+  --z-sidebar-overlay: 1999;
+  --z-sidebar: 2000;
+  --z-modal: 5000;
+  --z-notification: 9999;
+  --z-page-expired: 99999;
+
+  /* ============================================
+     STROKE & SCALE
+     ============================================ */
+  --stroke-width-sm: 1px;
+  --stroke-width-md: 1.5;
+  --stroke-width-lg: 2px;
+
+  --scale-hover-sm: 1.04;
+  --scale-hover-md: 1.08;
+  --scale-hover-lg: 1.12;
+  --scale-initial: 0.93;
+  --scale-modal-initial: 0.96;
+
+  /* ============================================
+     OPACITY SYSTEM
+     ============================================ */
+  --opacity-muted: 0.45;
+  --opacity-medium: 0.7;
+  --opacity-high: 0.9;
+  --opacity-full: 1;
+  --opacity-invisible: 0;
+
+  /* ============================================
+     CAPTCHA SPECIFIC
+     ============================================ */
+  --captcha-max-height: 72px;
+  --captcha-width: 298px;
+  --captcha-margin-top-collapsed: 1.5rem;
+  --captcha-margin-bottom: 12px;
+  --captcha-widget-offset-x: -2px;
+  --captcha-widget-offset-y: -2px;
+
+  /* ============================================
+     PROGRESS BAR & PASSWORD STRENGTH
+     ============================================ */
+  --progress-bar-height: 3px;
+  --password-strength-gap: 6px;
+  --password-strength-bar-height: 3px;
+
+  /* ============================================
+     ANIMATION DURATIONS
+     ============================================ */
+  --animation-shimmer-duration: 2.2s;
+  --animation-progress-duration: 1.6s;
+  --animation-fade-duration: 0.25s;
+  --animation-fade-in-duration: 0.35s;
+  --animation-fade-delay: 0.15s;
+  --animation-fade-in-distance: 16px;
+  --animation-notification-enter: 0.5s;
+  --animation-notification-exit: 0.35s;
+  --animation-modal-enter: 0.4s;
+  --animation-hourglass-duration: 3s;
+
+  --gradient-animated-size: 200% auto;
+
+  /* ============================================
+     SIDEBAR SYSTEM
+     ============================================ */
+  --sidebar-width: 300px;
+  --sidebar-padding-x: 30px;
+  --sidebar-padding-y: 40px;
+  --sidebar-closed-offset: -100%;
+  --sidebar-logo-size: 80px;
+  --sidebar-logo-margin-bottom: -2px;
+  --sidebar-link-height: 50px;
+  --sidebar-item-gap: 11px;
+
+  --font-size-sidebar-link: 0.8125rem;
+  --font-size-sidebar-logo: 1.4rem;
+  --letter-spacing-extra-wide: 3px;
+
+  /* ============================================
+     UNDERLINE & ROTATION SYSTEM
+     ============================================ */
+  --underline-offset-sm: 4px;
+  --underline-offset-md: 6px;
+  --underline-offset-lg: 8px;
+
+  --rotation-subtle: 5deg;
+  --rotation-quarter: 90deg;
+  --rotation-half: 180deg;
+  --rotation-full: 360deg;
+
+  /* ============================================
+     SCROLLBAR SYSTEM - Thin ember scrollbar
+     ============================================ */
+  --scrollbar-width-thin: 3px;
+  --scrollbar-width-medium: 6px;
+  --scrollbar-hidden-width: 0px;
+
+  /* ============================================
+     DROPDOWN SYSTEM
+     ============================================ */
+  --dropdown-max-height: 200px;
+  --dropdown-padding: 5px;
+
+  /* ============================================
+     EASING FUNCTIONS
+     ============================================ */
+  --easing-linear: linear;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-emphasized: cubic-bezier(0.77, 0, 0.175, 1);
+  --easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-spring: cubic-bezier(0.23, 1, 0.32, 1);
+
+  /* ============================================
+     NOTIFICATION SYSTEM
+     ============================================ */
+  --notification-offset-x: 30px;
+  --notification-offset-y: 30px;
+  --notification-min-width: 320px;
+  --notification-max-width: 450px;
+  --notification-padding: 18px;
+  --notification-gap: 15px;
+  --notification-slide-distance: 50px;
+
+  /* ============================================
+     MODAL SYSTEM
+     ============================================ */
+  --modal-padding-x: 40px;
+  --modal-padding-y: 50px;
+  --modal-icon-size: 60px;
+  --modal-icon-margin-bottom: 30px;
+  --modal-title-margin-bottom: 15px;
+  --modal-text-margin-bottom: 25px;
+  --modal-code-margin-bottom: 35px;
+
+  --font-size-modal-title: 1.8rem;
+  --font-size-modal-body: 0.95rem;
+  --font-size-modal-code: 0.8rem;
+  --font-size-button: 0.9rem;
+
+  --font-family-secondary: 'Fraunces', Georgia, serif;
+  --font-family-monospace: 'JetBrains Mono', 'Courier New', monospace;
+
+  --font-size-3xs: 0.625rem;
+  --font-size-4xs: 0.5625rem;
+  --letter-spacing-tight-xs: 0.5px;
+  --letter-spacing-tight-sm: 1px;
+}

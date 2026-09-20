@@ -1,0 +1,682 @@
+:root[data-theme="CyberNeon"],
+.CyberNeon-theme {
+  /* ============================================
+     BACKGROUNDS - Deep space midnight surfaces
+     ============================================ */
+  --surface-base: #080C14;           /* Deep space black-navy */
+  --surface-raised: #0D1220;         /* Dark midnight panel */
+  --surface-elevated: #111827;       /* Elevated card surface */
+  --surface-overlay: #1A2236;        /* Hover / overlay layer */
+  --surface-modal: rgba(8, 12, 20, 0.97);
+
+  /* ============================================
+     BRAND SPECTRUM - Electric cyan scale
+     ============================================ */
+  --brand-50: #E0FBFF;
+  --brand-100: #B3F4FF;
+  --brand-200: #7AEEFF;
+  --brand-300: #38E5FF;
+  --brand-400: #00D4FF;              /* Core electric cyan */
+  --brand-500: #00B8E0;
+  --brand-600: #0099BC;
+  --brand-700: #007A96;
+  --brand-800: #005C70;
+  --brand-900: #003D4A;
+
+  /* ============================================
+     PRIMARY ACTIONS - Neon cyan palette
+     ============================================ */
+  --primary: #00D4FF;                /* Electric cyan */
+  --primary-intense: #38E5FF;        /* Bright laser cyan */
+  --primary-subtle: #00B8E0;
+  --primary-muted: #0099BC;
+
+  /* ============================================
+     SECONDARY BRAND - Neon violet spectrum
+     ============================================ */
+  --secondary: #7C3AED;              /* Deep violet */
+  --secondary-intense: #A855F7;      /* Bright purple */
+  --secondary-subtle: #6D28D9;
+  --secondary-muted: #5B21B6;
+
+  /* ============================================
+     ACCENT - Hot magenta / neon pink
+     ============================================ */
+  --accent-primary: #FF2D78;         /* Hot neon pink */
+  --accent-secondary: #FF6BBA;       /* Soft neon pink */
+  --accent-tertiary: #00FF88;        /* Neon mint green */
+
+  /* ============================================
+     TEXT HIERARCHY - Crisp readable contrast
+     ============================================ */
+  --text-primary: #E8F4FF;           /* Soft white-blue */
+  --text-secondary: #94B8D4;         /* Muted blue-gray */
+  --text-tertiary: #6A8FA8;          /* Dim steel blue */
+  --text-muted: #3D5A72;             /* Very muted */
+  --text-accent: #00D4FF;            /* Cyan accent text */
+  --text-accent-subtle: #00B8E0;
+  --text-accent-warm: #A855F7;       /* Violet accent */
+
+  /* ============================================
+     BORDERS & DIVIDERS - Neon edge glow
+     ============================================ */
+  --border-subtle: #111E30;
+  --border-default: #1A2E45;         /* Dark blue border */
+  --border-strong: #1E3D58;
+  --border-accent: #00D4FF;          /* Cyan neon border */
+  --border-accent-intense: #38E5FF;
+  --border-accent-warm: #A855F7;     /* Violet border */
+  --border-accent-hot: #FF2D78;      /* Magenta border */
+
+  /* ============================================
+     INTERACTIVE ELEMENTS - Neon interactions
+     ============================================ */
+  --interactive-primary-bg: linear-gradient(135deg, #00B8E0 0%, #00D4FF 50%, #38E5FF 100%);
+  --interactive-primary-hover: linear-gradient(135deg, #38E5FF 0%, #7AEEFF 100%);
+  --interactive-primary-active: linear-gradient(135deg, #0099BC 0%, #00D4FF 100%);
+  --interactive-primary-text: #080C14;
+
+  --interactive-secondary-bg: rgba(124, 58, 237, 0.15);
+  --interactive-secondary-hover: rgba(124, 58, 237, 0.25);
+  --interactive-secondary-active: rgba(124, 58, 237, 0.35);
+  --interactive-secondary-text: #A855F7;
+
+  --interactive-ghost-hover: rgba(0, 212, 255, 0.08);
+  --interactive-ghost-active: rgba(0, 212, 255, 0.16);
+
+  /* ============================================
+     INPUT FIELDS - Cyber form controls
+     ============================================ */
+  --input-bg: #0D1220;
+  --input-bg-focus: #111827;
+  --input-border: #2E4765;      
+  --input-border-hover: #00A3C4;
+  --input-border-focus: #00D4FF; 
+  --input-text: #E8F4FF;
+  --input-placeholder: #3D5A72;
+
+  /* ============================================
+     FEEDBACK STATES - Neon notifications
+     ============================================ */
+  --state-success: #00FF88;          /* Neon mint */
+  --state-success-bg: rgba(0, 255, 136, 0.08);
+  --state-warning: #FFB800;          /* Neon amber */
+  --state-warning-bg: rgba(255, 184, 0, 0.08);
+  --state-error: #FF2D78;            /* Neon pink */
+  --state-error-bg: rgba(255, 45, 120, 0.08);
+  --state-info: #00D4FF;             /* Electric cyan */
+  --state-info-bg: rgba(0, 212, 255, 0.08);
+
+  /* ============================================
+     ELEVATION SYSTEM - Neon glow shadows
+     ============================================ */
+  --elevation-accent-sm: 0 2px 12px rgba(0, 212, 255, 0.2),
+                         0 0 6px rgba(0, 212, 255, 0.1),
+                         0 1px 4px rgba(0, 0, 0, 0.4);
+  --elevation-accent-md: 0 4px 20px rgba(0, 212, 255, 0.25),
+                         0 0 16px rgba(0, 212, 255, 0.12),
+                         0 2px 8px rgba(0, 0, 0, 0.5);
+  --elevation-accent-lg: 0 8px 36px rgba(0, 212, 255, 0.3),
+                         0 0 28px rgba(0, 212, 255, 0.15),
+                         0 4px 16px rgba(0, 0, 0, 0.6);
+  --elevation-accent-xl: 0 16px 56px rgba(0, 212, 255, 0.35),
+                         0 0 48px rgba(0, 212, 255, 0.18),
+                         0 8px 24px rgba(0, 0, 0, 0.7);
+
+  --elevation-violet-sm: 0 2px 12px rgba(124, 58, 237, 0.25),
+                         0 0 8px rgba(168, 85, 247, 0.12),
+                         0 1px 4px rgba(0, 0, 0, 0.4);
+  --elevation-violet-md: 0 4px 24px rgba(124, 58, 237, 0.3),
+                         0 0 20px rgba(168, 85, 247, 0.15),
+                         0 2px 8px rgba(0, 0, 0, 0.5);
+  --elevation-violet-lg: 0 8px 36px rgba(124, 58, 237, 0.35),
+                         0 0 32px rgba(168, 85, 247, 0.18);
+
+  --elevation-hot-sm: 0 2px 12px rgba(255, 45, 120, 0.25),
+                      0 0 8px rgba(255, 45, 120, 0.12);
+  --elevation-hot-md: 0 4px 24px rgba(255, 45, 120, 0.3),
+                      0 0 20px rgba(255, 45, 120, 0.15);
+
+  --elevation-base-sm: 0 1px 4px rgba(0, 0, 0, 0.5),
+                       0 2px 8px rgba(0, 0, 0, 0.3);
+  --elevation-base-md: 0 2px 12px rgba(0, 0, 0, 0.55),
+                       0 4px 16px rgba(0, 0, 0, 0.35);
+  --elevation-base-lg: 0 4px 20px rgba(0, 0, 0, 0.6),
+                       0 8px 32px rgba(0, 0, 0, 0.4);
+  --elevation-base-xl: 0 8px 36px rgba(0, 0, 0, 0.65),
+                       0 16px 48px rgba(0, 0, 0, 0.45);
+
+  --elevation-combined:
+    0 4px 20px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(0, 212, 255, 0.12),
+    0 0 20px rgba(124, 58, 237, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+
+  /* ============================================
+     GRADIENT SYSTEM - Cyber color flows
+     ============================================ */
+  --gradient-primary: linear-gradient(135deg,
+    #0099BC 0%,
+    #00D4FF 40%,
+    #38E5FF 70%,
+    #7AEEFF 100%
+  );
+  --gradient-primary-muted: linear-gradient(135deg,
+    #005C70 0%,
+    #00D4FF 100%
+  );
+  --gradient-primary-subtle: linear-gradient(135deg,
+    rgba(0, 212, 255, 0.06) 0%,
+    rgba(56, 229, 255, 0.02) 100%
+  );
+
+  --gradient-violet: linear-gradient(135deg,
+    #5B21B6 0%,
+    #7C3AED 40%,
+    #A855F7 100%
+  );
+  --gradient-hot: linear-gradient(135deg,
+    #C4004F 0%,
+    #FF2D78 50%,
+    #FF6BBA 100%
+  );
+  --gradient-tri: linear-gradient(135deg,
+    #00D4FF 0%,
+    #7C3AED 50%,
+    #FF2D78 100%
+  );
+  --gradient-tri-soft: linear-gradient(135deg,
+    rgba(0, 212, 255, 0.7) 0%,
+    rgba(124, 58, 237, 0.7) 50%,
+    rgba(255, 45, 120, 0.7) 100%
+  );
+
+  --gradient-surface-depth: linear-gradient(180deg,
+    #0D1220 0%,
+    #080C14 100%
+  );
+  --gradient-surface-cyber: linear-gradient(135deg,
+    #080C14 0%,
+    #0D1220 35%,
+    #111827 65%,
+    #0D1220 100%
+  );
+  
+  --gradient-spotlight-cyan: radial-gradient(
+    circle at 50% 0%,
+    rgba(0, 212, 255, 0.1) 0%,
+    rgba(0, 212, 255, 0.04) 40%,
+    transparent 70%
+  );
+  --gradient-spotlight-violet: radial-gradient(
+    circle at 80% 20%,
+    rgba(124, 58, 237, 0.12) 0%,
+    rgba(124, 58, 237, 0.04) 40%,
+    transparent 70%
+  );
+  --gradient-glow-cyan: radial-gradient(
+    circle at center,
+    rgba(0, 212, 255, 0.2) 0%,
+    rgba(0, 212, 255, 0.08) 40%,
+    transparent 70%
+  );
+  --gradient-glow-violet: radial-gradient(
+    circle at center,
+    rgba(168, 85, 247, 0.2) 0%,
+    rgba(124, 58, 237, 0.08) 40%,
+    transparent 70%
+  );
+
+  /* ============================================
+     ACCENT EFFECTS - Neon glow & shimmer
+     ============================================ */
+  --accent-glow: rgba(0, 212, 255, 0.4);
+  --accent-glow-violet: rgba(124, 58, 237, 0.4);
+  --accent-glow-hot: rgba(255, 45, 120, 0.4);
+  --accent-shimmer: rgba(56, 229, 255, 0.6);
+
+  --accent-divider: linear-gradient(90deg,
+    transparent 0%,
+    rgba(0, 212, 255, 0.2) 15%,
+    rgba(124, 58, 237, 0.5) 40%,
+    #00D4FF 50%,
+    rgba(124, 58, 237, 0.5) 60%,
+    rgba(0, 212, 255, 0.2) 85%,
+    transparent 100%
+  );
+  --accent-divider-hot: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 45, 120, 0.3) 20%,
+    #FF2D78 50%,
+    rgba(255, 45, 120, 0.3) 80%,
+    transparent 100%
+  );
+
+  /* ============================================
+     OVERLAY SYSTEM - Dark cyber glass
+     ============================================ */
+  --overlay-subtle: rgba(8, 12, 20, 0.7);
+  --overlay-medium: rgba(8, 12, 20, 0.85);
+  --overlay-strong: rgba(8, 12, 20, 0.94);
+
+  --overlay-glass-subtle: rgba(13, 18, 32, 0.75);
+  --overlay-glass-medium: rgba(13, 18, 32, 0.88);
+  --overlay-glass-strong: rgba(13, 18, 32, 0.97);
+
+  --overlay-glass-cyan: rgba(0, 212, 255, 0.04);
+  --overlay-glass-violet: rgba(124, 58, 237, 0.06);
+
+  /* ============================================
+     SPECIAL EFFECTS - Cyber animations
+     ============================================ */
+  --effect-shimmer: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 212, 255, 0.15) 20%,
+    rgba(56, 229, 255, 0.4) 40%,
+    rgba(122, 238, 255, 0.6) 50%,
+    rgba(56, 229, 255, 0.4) 60%,
+    rgba(0, 212, 255, 0.15) 80%,
+    transparent 100%
+  );
+  --effect-shimmer-violet: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(124, 58, 237, 0.15) 20%,
+    rgba(168, 85, 247, 0.4) 50%,
+    rgba(124, 58, 237, 0.15) 80%,
+    transparent 100%
+  );
+
+  --effect-scanlines: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 212, 255, 0.015) 2px,
+    rgba(0, 212, 255, 0.015) 4px
+  );
+
+  --effect-neon-border: linear-gradient(
+    90deg,
+    #00D4FF,
+    #7C3AED,
+    #FF2D78,
+    #7C3AED,
+    #00D4FF
+  );
+
+  --effect-metallic-cyber: linear-gradient(
+    135deg,
+    #003D4A 0%,
+    #005C70 10%,
+    #00B8E0 25%,
+    #00D4FF 35%,
+    #38E5FF 50%,
+    #00D4FF 65%,
+    #00B8E0 75%,
+    #005C70 90%,
+    #003D4A 100%
+  );
+
+  --gradient-accent-enhanced: linear-gradient(
+    135deg,
+    #00B8E0 0%,
+    #7AEEFF 20%,
+    #38E5FF 40%,
+    #A855F7 60%,
+    #38E5FF 80%,
+    #00D4FF 100%
+  );
+
+  --gradient-text-accent: linear-gradient(
+    to right,
+    #00B8E0 0%,
+    #00D4FF 25%,
+    #7C3AED 50%,
+    #FF2D78 75%,
+    #00D4FF 100%
+  );
+
+  --gradient-text-cyan: linear-gradient(
+    to right,
+    #007A96 0%,
+    #00D4FF 40%,
+    #38E5FF 60%,
+    #00D4FF 100%
+  );
+
+  /* ============================================
+     PASSWORD STRENGTH - Neon feedback
+     ============================================ */
+  --state-strength-weak: #FF2D78;
+  --state-strength-fair: #FFB800;
+  --state-strength-moderate: #A855F7;
+  --state-strength-strong: #00D4FF;
+  --state-strength-excellent: #00FF88;
+
+  /* ============================================
+     TEXTURE EFFECTS - Cyber grid patterns
+     ============================================ */
+  --texture-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+
+  --texture-grid: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='%23080C14'/%3E%3Cpath d='M0 0h40M0 40h40M0 0v40M40 0v40' stroke='%231A2E45' stroke-width='0.5' opacity='0.5'/%3E%3C/svg%3E");
+
+  --texture-dots: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='0.8' fill='%2300D4FF' opacity='0.12'/%3E%3C/svg%3E");
+
+  --texture-circuit: url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%231A2E45' stroke-width='0.6' fill='none' opacity='0.6'%3E%3Cpath d='M10 40h20M50 40h20M40 10v20M40 50v20'/%3E%3Ccircle cx='40' cy='40' r='3' stroke='%2300D4FF' opacity='0.3'/%3E%3Ccircle cx='10' cy='40' r='2'/%3E%3Ccircle cx='70' cy='40' r='2'/%3E%3Ccircle cx='40' cy='10' r='2'/%3E%3Ccircle cx='40' cy='70' r='2'/%3E%3C/g%3E%3C/svg%3E");
+
+  /* ============================================
+     BRAND ASSETS
+     ============================================ */
+  --logo-main: url(../../../public/images/icons/night_theme/icon-512-transparint.png);
+
+  /* ============================================
+     TEXT SHADOWS - Neon glow depth
+     ============================================ */
+  --text-shadow-sm: 0 0 8px rgba(0, 212, 255, 0.3),
+                    0 1px 3px rgba(0, 0, 0, 0.5);
+  --text-shadow-md: 0 0 16px rgba(0, 212, 255, 0.4),
+                    0 0 32px rgba(0, 212, 255, 0.15),
+                    0 2px 6px rgba(0, 0, 0, 0.6);
+  --text-shadow-gold: 0 0 12px rgba(0, 212, 255, 0.6),
+                      0 0 24px rgba(0, 212, 255, 0.3),
+                      0 0 48px rgba(124, 58, 237, 0.2),
+                      0 2px 4px rgba(0, 0, 0, 0.5);
+  --text-shadow-hot: 0 0 12px rgba(255, 45, 120, 0.6),
+                     0 0 24px rgba(255, 45, 120, 0.3),
+                     0 2px 4px rgba(0, 0, 0, 0.5);
+  --text-shadow-violet: 0 0 12px rgba(168, 85, 247, 0.5),
+                        0 0 24px rgba(124, 58, 237, 0.25),
+                        0 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM - Cyber aesthetic
+     ============================================ */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-display: 'Rajdhani', 'Orbitron', 'Segoe UI', sans-serif;
+  --font-family-accent: 'Share Tech Mono', 'Courier New', monospace;
+
+  --font-size-2xs: 0.7179rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-normal: 0.5px;
+  --letter-spacing-wide: 1.5px;
+  --letter-spacing-wider: 2.5px;
+  --letter-spacing-widest: 4px;
+
+  /* ============================================
+     SPACING SCALE
+     ============================================ */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.375rem;
+  --space-sm: 0.625rem;
+  --space-md: 0.9375rem;
+  --space-lg: 1.4375rem;
+  --space-xl: 1.5625rem;
+  --space-2xl: 3rem;
+  --space-base: 1rem;
+  --space-3xs: 0.5rem;
+
+  /* ============================================
+     BORDER RADIUS SCALE - Cyber sharp edges
+     ============================================ */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-full: 50%;
+  --radius-pill: 50px;
+  --radius-md-alt: 8px;
+  --radius-captcha: 4px;
+
+  /* ============================================
+     BORDER WIDTH
+     ============================================ */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  --border-width-accent: 1px;
+
+  /* ============================================
+     COMPONENT DIMENSIONS
+     ============================================ */
+  --container-width-sm: 411px;
+  --container-height-sm: 269px;
+  --form-max-width: 480px;
+  --header-height: 48px;
+  --logo-size: 45px;
+  --divider-height-sm: 20px;
+  --menu-icon-width: 28px;
+  --menu-icon-width-sm: 18px;
+  --dot-size: 20px;
+  --dot-size-active: 50px;
+  --icon-size-sm: 24px;
+
+  /* ============================================
+     INPUT SYSTEM
+     ============================================ */
+  --input-padding-x: 16px;
+  --input-padding-y: 12px;
+  --input-padding-y-alt: 14px;
+  --input-padding-with-icon: 36px;
+  --input-padding-right-with-icon: 45px;
+  --input-icon-offset: 54px;
+  --input-icon-top: 50%;
+  --input-icon-left: 5px;
+  --input-action-btn-offset: 12px;
+  --focus-ring-width: 2px;
+
+  /* ============================================
+     BUTTON SYSTEM
+     ============================================ */
+  --button-padding-x: 16px;
+  --button-padding-y: 16px;
+  --button-padding-sm-y: 12px;
+  --button-padding-lg-x: 35px;
+  --button-back-width: 60px;
+  --button-back-padding-x: 14px;
+  --button-group-gap: 9px;
+
+  /* ============================================
+     ANIMATION & TRANSITIONS - Cyber speed
+     ============================================ */
+  --transition-fast: 0.12s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+  --transition-slower: 0.6s ease;
+  --transition-sidebar: 0.4s;
+  --transition-overlay: 0.4s ease;
+  --transition-captcha-expand: 0.5s ease-in-out;
+  --transition-captcha-fade: 0.4s ease-in-out 0.1s;
+
+  --blur-sm: 8px;
+  --blur-md: 15px;
+  --blur-lg: 24px;
+  --blur-overlay-sm: 10px;
+
+  /* ============================================
+     EFFECTS & OFFSETS
+     ============================================ */
+  --hover-lift-sm: -2px;
+  --hover-lift-md: -4px;
+  --step-slide-offset: -20px;
+  --sticky-bar-hidden-offset: -74px;
+  --notification-hidden-offset: -70px;
+
+  --glow-radius-sm: 6px;
+  --glow-radius-md: 12px;
+  --glow-radius-lg: 20px;
+  --glow-radius-xl: 35px;
+
+  /* ============================================
+     Z-INDEX SYSTEM
+     ============================================ */
+  --z-base: 1;
+  --z-input-icon: 9;
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-header: 1000;
+  --z-shadow: 1500;
+  --z-sidebar-overlay: 1999;
+  --z-sidebar: 2000;
+  --z-modal: 5000;
+  --z-notification: 9999;
+  --z-page-expired: 99999;
+
+  /* ============================================
+     STROKE & SCALE
+     ============================================ */
+  --stroke-width-sm: 1px;
+  --stroke-width-md: 1.5;
+  --stroke-width-lg: 2px;
+
+  --scale-hover-sm: 1.05;
+  --scale-hover-md: 1.1;
+  --scale-hover-lg: 1.15;
+  --scale-initial: 0.92;
+  --scale-modal-initial: 0.95;
+
+  /* ============================================
+     OPACITY SYSTEM
+     ============================================ */
+  --opacity-muted: 0.5;
+  --opacity-medium: 0.75;
+  --opacity-high: 0.9;
+  --opacity-full: 1;
+  --opacity-invisible: 0;
+
+  /* ============================================
+     CAPTCHA SPECIFIC
+     ============================================ */
+  --captcha-max-height: 72px;
+  --captcha-width: 298px;
+  --captcha-margin-top-collapsed: 1.5rem;
+  --captcha-margin-bottom: 12px;
+  --captcha-widget-offset-x: -2px;
+  --captcha-widget-offset-y: -2px;
+
+  /* ============================================
+     PROGRESS BAR & PASSWORD STRENGTH
+     ============================================ */
+  --progress-bar-height: 3px;
+  --password-strength-gap: 6px;
+  --password-strength-bar-height: 3px;
+
+  /* ============================================
+     ANIMATION DURATIONS
+     ============================================ */
+  --animation-shimmer-duration: 2s;
+  --animation-progress-duration: 1.8s;
+  --animation-fade-duration: 0.25s;
+  --animation-fade-in-duration: 0.35s;
+  --animation-fade-delay: 0.15s;
+  --animation-fade-in-distance: 16px;
+  --animation-notification-enter: 0.5s;
+  --animation-notification-exit: 0.35s;
+  --animation-modal-enter: 0.4s;
+  --animation-hourglass-duration: 3s;
+
+  --gradient-animated-size: 200% auto;
+
+  /* ============================================
+     SIDEBAR SYSTEM
+     ============================================ */
+  --sidebar-width: 300px;
+  --sidebar-padding-x: 30px;
+  --sidebar-padding-y: 40px;
+  --sidebar-closed-offset: -100%;
+  --sidebar-logo-size: 80px;
+  --sidebar-logo-margin-bottom: -2px;
+  --sidebar-link-height: 50px;
+  --sidebar-item-gap: 11px;
+
+  --font-size-sidebar-link: 0.8125rem;
+  --font-size-sidebar-logo: 1.4rem;
+  --letter-spacing-extra-wide: 4px;
+
+  /* ============================================
+     UNDERLINE & ROTATION SYSTEM
+     ============================================ */
+  --underline-offset-sm: 4px;
+  --underline-offset-md: 6px;
+  --underline-offset-lg: 8px;
+
+  --rotation-subtle: 5deg;
+  --rotation-quarter: 90deg;
+  --rotation-half: 180deg;
+  --rotation-full: 360deg;
+
+  /* ============================================
+     SCROLLBAR SYSTEM - Thin neon scrollbar
+     ============================================ */
+  --scrollbar-width-thin: 3px;
+  --scrollbar-width-medium: 6px;
+  --scrollbar-hidden-width: 0px;
+
+  /* ============================================
+     DROPDOWN SYSTEM
+     ============================================ */
+  --dropdown-max-height: 200px;
+  --dropdown-padding: 5px;
+
+  /* ============================================
+     EASING FUNCTIONS - Cyber motion
+     ============================================ */
+  --easing-linear: linear;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-emphasized: cubic-bezier(0.77, 0, 0.175, 1);
+  --easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-spring: cubic-bezier(0.23, 1, 0.32, 1);
+  --easing-cyber: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* ============================================
+     NOTIFICATION SYSTEM
+     ============================================ */
+  --notification-offset-x: 30px;
+  --notification-offset-y: 30px;
+  --notification-min-width: 320px;
+  --notification-max-width: 450px;
+  --notification-padding: 18px;
+  --notification-gap: 15px;
+  --notification-slide-distance: 50px;
+
+  /* ============================================
+     MODAL SYSTEM
+     ============================================ */
+  --modal-padding-x: 40px;
+  --modal-padding-y: 50px;
+  --modal-icon-size: 60px;
+  --modal-icon-margin-bottom: 30px;
+  --modal-title-margin-bottom: 15px;
+  --modal-text-margin-bottom: 25px;
+  --modal-code-margin-bottom: 35px;
+
+  --font-size-modal-title: 1.8rem;
+  --font-size-modal-body: 0.95rem;
+  --font-size-modal-code: 0.8rem;
+  --font-size-button: 0.9rem;
+
+  --font-family-secondary: 'Segoe UI', Arial, sans-serif;
+  --font-family-monospace: 'Share Tech Mono', 'Fira Code', 'Courier New', monospace;
+
+  --font-size-3xs: 0.625rem;
+  --font-size-4xs: 0.5625rem;
+  --letter-spacing-tight-xs: 0.5px;
+  --letter-spacing-tight-sm: 1px;
+}
