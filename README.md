@@ -1,6 +1,7 @@
 # this file is written by ai because i am to lazy to do it thank u claude <3
 # btw there is an image of an drowing archtichere for the system i did it you need to check it i got tired while doing it file name called arch.drawio
-
+# you don't need to reed all of this to run the app just run tst servers and run main app open the dashboard and boom you can watch trafic and do all kind of things
+# also there is a file called trafic you can run it to genrate fake trafic i liked the idea a lot
 
 # ⚡ Custom Reverse Proxy & Real-Time Dashboard
 
